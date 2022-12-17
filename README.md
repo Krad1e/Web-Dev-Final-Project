@@ -1,5 +1,11 @@
 <h1>How to use: </h1> 
 
+<b>Software Required:</b>  
+
+>Node.js  
+>MySQL workbench + server 
+
+
 1. Install dependencies (check packages.json line 12 for installed dependencies)
 >npm install "dependency name"  
     
