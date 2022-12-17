@@ -3,7 +3,6 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 const app = express()
-// const port = 3000
 const PORT = process.env.PORT || 3000;
 
 const mysql = require('mysql2')
@@ -87,4 +86,3 @@ app.route("/").get(function (req, res) {
   app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`);
   });
-// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
