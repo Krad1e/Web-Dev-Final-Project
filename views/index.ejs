@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kradle - Final Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1 >Header 1</h1>
+  <h2 class="text-warning"> Welcome to my page.</h2>
+  <p class="text-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+  <a href = "mailto: username@email.com"><button type ="button" class ="btn btn-primary">Email me</button>
+  <br><br>
+  <a href= "https://www.linkedin.com//"><button type ="button" class ="btn btn-info">Linkedin</button>
+  <a href= "https://github.com/Krad1e"><button type ="button" class= "btn btn-info">GitHub</button></a> <!-- 3 links including Linkedin, GitHub, Youtube -->
+  <a href= "https://www.youtube.com/"><button type ="button" class= "btn btn-info">Youtube</button></a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3><b>idUser</h3></b>
+      <li><b><%- rows[0].iduser%></b></li>
+      <li><b><%- rows[1].iduser%></b></li>
+      <li><b><%- rows[2].iduser%></b></li>
+      <li><b><%- rows[3].iduser%></b></li>
+    </div>
+    <div class="col-sm-4">
+      <h3><b>UserName</h3></b>
+      <li><b><%- rows[0].UserName%></b></li>
+      <li><b><%- rows[1].UserName%></b></li>
+      <li><b><%- rows[2].UserName%></b></li>
+      <li><b><%- rows[3].UserName%></b></li>
+    </div>
+    <div class="col-sm-4">
+      <h3><b>email</h3></b>        
+      <li><b><%- rows[0].email%></b></li>
+      <li><b><%- rows[1].email%></b></li>
+      <li><b><%- rows[2].email%></b></li>
+      <li><b><%- rows[3].email%></b></li>
+    </div>
+    <div class = "col-sm-8">
+      <br>
+      <h3><b> Contact Me</h3></b>
+      <form id="contact-form" method="POST" action="send" enctype="multipart/form-data">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+            <input placeholder="Name" id="name" name="name" type="text" class="form-control" required/>
+            </div>
+            <div class="col-md-6">
+            <input placeholder="Email" id="email" type="email" name="email" class="form-control" aria-describedby="emailHelp" required/>
+            </div>
+          </div>
+        </div>
+            <div class="form-group">
+            <input placeholder="Subject" id="subject" name="subject" type="text" class="form-control" required/>
+            </div>
+              <div class="form-group">
+              <textarea placeholder="Message" id="message" name="message" class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+            </form>
+  </div>
+</div>
+</body>
+</html>
