@@ -6,7 +6,7 @@
 >MySQL workbench + server 
 
 
-1. Install dependencies (check packages.json line 12 for installed dependencies)
+1. Install dependencies (check packages.json for installed dependencies)
 >npm install "dependency name"  
     
 <b>Example:</b>  
